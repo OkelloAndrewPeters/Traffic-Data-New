@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+<title>AirQO - Get Pixel Value</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <p></p>
+<div class="container">
+
+    <div class="row">
+    
+    <div class="col-md-12">
+    <form action="#" id="getPixels">
+        <label for="">Enter Location:</label>
+
+        <div class="form-group">
+            <input class = "form-control" type="text" id="location" placeholder="for example KASUBI, KAMPALA">
+        </div>
+
+        <div id="results"></div>
+
+        <input type="button" id="btn-get-pixel" class="btn btn-primary" value="Get Pixels" disabled> 
+        <input type="hidden" id="location_id">
+    </form>
+    
+    <div id="loader" class="loader hide-it"></div>
+
+    </div>
+
+    <div class="col-md-12">
+        <div id="pixel-details" class="pixel-details">
+        </div>
+        <section id="pixel-count-container">
+            <div id="color-swatches" class="color-swatches">
+            </div>
+        </section> 
+    </div>
+
+    </div><!--row-->
+
+<script src="js/jquery/dist/jquery.min.js"></script>
+<script src="index.js"></script>
+</div>
+</body>
+</html>
